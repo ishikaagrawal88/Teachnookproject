@@ -1,0 +1,99 @@
+.body {
+  font-family: cursive;
+  display: grid;
+}
+*{
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  background: #A0522D;
+  opacity: 50%;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.intro {
+  position: static;
+  text-align: center;
+  padding-top: 25px;
+  margin: 50px 20px 10px 20px;
+  height: 60px;
+  background-color: #CD853F;
+  color: white;
+  font-family:sans-serif;
+  font-size: 18px;
+}
+.bottom{
+  text-align: center;
+  text-decoration: none;
+  color: brown;
+  font-size: 20px;
+  font-family:sans-serif;
+  background-color: darksalmon;
+  margin-bottom: 40px;
+}
+.submit{
+  background-color: grey;
+}
+.copyright {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  background: #A0522D;
+  opacity: 50%;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#a {
+  grid-area: A;
+}
+
+#b {
+  grid-area: B;
+}
+
+#c {
+  grid-area: C;
+}
+
+#d {
+  grid-area: D;
+}
+
+#e {
+  grid-area: E;
+}
+
+#maindiv {
+  display: grid;
+  grid-template-areas: "A A A A A A"
+    "B B B C C C"
+    "D D D E E E";
+  padding: 10px;
+  background-color: #FFDEAD;
+  margin: 20px;
+  grid-gap: 10px;
+  border-radius: 20px;
+}
+
+#maindiv>div {
+  background-color: #A0522D;
+  margin: 20px;
+  grid-gap: 10px;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+}
